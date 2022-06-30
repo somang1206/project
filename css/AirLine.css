@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#AirLine_main {
+  height: 65rem;
+}
+#AirLine_reservation_top {
+  position: relative;
+  font-family: "Nanum Gothic", sans-serif;
+}
+#AirLine_background_img {
+  background-image: url(../img/gif.jpg);
+  width: 100%;
+  height: 65rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+}
+
+#exchange_icon {
+  margin: 5px 0px 0px 20px;
+}
+#AirLine_reservation {
+  position: absolute;
+  width: 1080px;
+  height: 830px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -20%);
+  background-color: rgba(217, 217, 217, 0.4);
+}
+#reservation_flex_user_select {
+  display: flex;
+  margin-left: 40px;
+}
+.reservation_menu {
+  display: flex;
+  margin: 20px;
+  font-size: 1.5rem;
+  padding: 0px, 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.HideMenu_1 {
+  width: 135px;
+  height: 0;
+  opacity: 0;
+  transition: all 1s;
+  background-color: #fff;
+  z-index: 1000;
+  margin-left: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-5px, -20px);
+}
+.HideMenu_2 {
+  width: 135px;
+  opacity: 0;
+  height: 0;
+  transition: all 1s;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(200px, -20px);
+  z-index: 1000;
+  font-size: 1.5rem;
+}
+
+.HideMenu_1 > p:hover {
+  background-color: rgb(14, 195, 240, 0.7);
+  color: white;
+  border-radius: 10px;
+}
+#reservation_flex_hidden_Menu > p:hover {
+  background-color: rgb(14, 195, 240, 0.7);
+  color: white;
+  border-radius: 10px;
+}
+.HideMenu_1 > p {
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0px;
+}
+.reservation_menu > p {
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+#reservation_palce_background {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+  width: 960px;
+  height: 150px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+#reservation_select {
+  position: absolute;
+  display: flex;
+  top: 40%;
+  align-items: center;
+  transform: translateY(-10px);
+}
+#reservation_starting_point > p {
+  padding: 2.5px 20px;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
+.reservation_starting_point_option > input {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgba(217, 217, 217, 0.4);
+  font-size: 1rem;
+  text-align: center;
+  border: 1px none;
+}
+#reservation_starting_point {
+  display: flex;
+}
+#reservation_destination {
+  display: flex;
+}
+#reservation_destination > p {
+  padding: 2.5px 20px;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
+#reservation_time {
+  display: flex;
+  margin-left: 20px;
+}
+#first_date {
+  border-radius: 30px 0px 0px 30px;
+  border-right: 2px solid skyblue;
+}
+#second_date {
+  border-radius: 0px 30px 30px 0px;
+}
+
+.reservation_date {
+  border: 1px none;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: rgba(217, 217, 217, 0.4);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservation_date > p {
+  margin-left: 10px;
+}
+
+#reservation_search {
+  width: 960px;
+  height: 80px;
+  border: 1px none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  transform: translate(60px, 150px);
+  background-color: #4585ff;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+}
+#reservation_square_nav {
+  position: relative;
+  width: 100%;
+  top: 365px;
+  display: inline-block;
+}
+#reservation_quare_nav_top {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  color: rgba(67, 127, 254);
+  border: 1px solid lightgray;
+  height: 60px;
+}
+.reservation_nav_bar:hover {
+  border-bottom: 4px solid rgba(67, 127, 254);
+}
+.reservation_nav_bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.reservation_nav_bar:first-child {
+  border-right: 1px solid lightgray;
+}
+.reservation_nav_bar:nth-child(2) {
+  border-right: 1px solid lightgray;
+}
+.reservation_nav_bar:nth-child(3) {
+  border-right: 1px solid lightgray;
+}
+.reservation_nav_bar > p {
+  color: #000;
+}
+#reservation_square_banner {
+  width: 100%;
+  height: 400px;
+}
+#reservation_banner_box {
+  list-style: none;
+  overflow: hidden;
+}
+#reservation_banner_box:first-child {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/333333333333333.webp);
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 10px 20px grey);
+}
+
+#banner_img02 {
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.banner_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+#reservation_check_my_reservation {
+  border: 1px none;
+  background-color: #3264ff;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 55px;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+#first_banner_ment {
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 60px;
+}
+#banner_sub_ment {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 60px;
+  font-weight: bold;
+}
+.sub_ment {
+  font-size: 1.25rem;
+}
+#reservation_login_ment {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  font-weight: bold;
+}
+#reservation_login_ment > a {
+  padding: 10px 5px;
+  text-decoration: none;
+}
+#reservation_login_ment > a:hover {
+  text-decoration: solid;
+}
+#reservation_slide_banner {
+  width: 1300px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  cursor: pointer;
+}
+#reservation_silde_banner_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#reservation_preBtn,
+#reservation_ntxBtn {
+  font-size: 4rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.reservation_banner_imgitem {
+  list-style: none;
+}
+#reservation_banner_img {
+  display: inline-flex;
+  overflow: hidden;
+}
+#reservation_first_banner_item {
+  display: inline-flex;
+  height: 140px;
+}
+#reservation_first_banner_item > li:first-child {
+  background: url(../img/slideBanner/slidebanner01.jpg);
+  width: 1200px;
+  height: 140px;
+}
+#reservation_first_banner_item > li:nth-child(2) {
+  background: url(../img/slideBanner/sldiebanner2.jpg);
+  width: 1200px;
+  height: 140px;
+}
+#reservation_first_banner_item > li:nth-child(3) {
+  background: url(../img/slideBanner/slidebanner03.jpg);
+  width: 1200px;
+  height: 140px;
+}
+#reservation_first_banner_item > li:nth-child(4) {
+  background: url(../img/slideBanner/slidebanner04.jpg);
+  width: 1200px;
+  height: 140px;
+}
+#reservation_abroad_trip_packge {
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: "Do Hyeon", sans-serif;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Jua", sans-serif;
+}
+#reservation_abroad_trip_packge_title {
+  display: flex;
+}
+#reservation_abroad_trip_packge_title > p {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+#reservation_abroad_trip_packge_title > img {
+  width: 50px;
+  height: 50px;
+  transform: translateY(10px);
+}
+#reservation_abroad_trip_packge_item {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  font-family: "Gowun Batang", serif;
+}
+#reservation_abroad_trip_packge_item_big_item {
+  background: url(../img/package_item_bigimg.jfif);
+  width: 440px;
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#reservation_abroad_trip_packge_item_big_img > p {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Gowun Batang", serif;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+#big_item_sub_menu {
+  list-style: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 250px;
+  left: 70px;
+}
+.europ {
+  border: 1px none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 130px;
+  height: 40px;
+  margin: 20px 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.europ:hover {
+  background-color: #000;
+  color: #fff;
+}
+#reservation_abroad_trip_packge_item_sub_img {
+  list-style: none;
+}
+#reservation_abroad_trip_packge_item_sub_img
+  > .abroad_trip_packge_item_sub_img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.abroad_trip_packge_item_sub_img {
+  transition: 0.5s;
+}
+#reservation_abroad_trip_packge_item_sub_img > li:first-child {
+  background-image: url(../img/package_item_subimg01.jfif);
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-size: cover;
+  left: 300px;
+  top: 150px;
+}
+
+#abroad_trip_packge_item_sub_info01 {
+  height: 11rem;
+  position: absolute;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 20px;
+  top: 100%;
+}
+#abroad_trip_packge_item_sub_info01 > strong,
+p {
+  padding: 10px 0px;
+}
+#abroad_trip_packge_item_sub_info01 > p:last-child {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#reservation_abroad_trip_packge_item_sub_img > li:nth-child(2) {
+  background-image: url(../img/package_item_subimg02.jfif);
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-size: cover;
+  left: 650px;
+  top: 150px;
+}
+#abroad_trip_packge_item_sub_info02 {
+  height: 11rem;
+  position: absolute;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 20px;
+  top: 100%;
+}
+#abroad_trip_packge_item_sub_info02 > p:last-child {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#reservation_abroad_trip_packge_item_sub_img > li:nth-child(3) {
+  background-image: url(../img/package_item_subimg03.jfif);
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-size: contain;
+  left: 1000px;
+  top: 150px;
+}
+#abroad_trip_packge_item_sub_info03 {
+  height: 11rem;
+  position: absolute;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 20px;
+  top: 100%;
+}
+#abroad_trip_packge_item_sub_info03 > p:last-child {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#reservation_airline_choose {
+  width: 1300px;
+  margin-top: 100px;
+  height: 30rem;
+}
+#reservation_airline_choose_title {
+  font-size: 1.875rem;
+  display: flex;
+  font-weight: bold;
+}
+#reservation_airline_choose_item_img > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.airline_choose_item {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background-position: center;
+}
+#reservation_airline_choose_title > img {
+  width: 80px;
+  height: 80px;
+  transform: translateY(-10px);
+  margin-left: 20px;
+}
+#reservation_airline_choose_item_img {
+  margin-top: 50px;
+}
+#reservation_airline_choose_item_img
+  > #reservation_airline_UL
+  > li:first-child {
+  background-image: url(../img/choose_item_img01.png);
+}
+#reservation_airline_choose_item_img
+  > #reservation_airline_UL
+  > li:nth-child(2) {
+  background-image: url(../img/choose_item_img02.png);
+}
+#reservation_airline_choose_item_img
+  > #reservation_airline_UL
+  > li:nth-child(3) {
+  background-image: url(../img/choose_item_img03.png);
+}
+#reservation_airline_choose_item_img
+  > #reservation_airline_UL
+  > li:nth-child(4) {
+  background-image: url(../img/choose_item_img04.png);
+}
+#reservation_airline_choose_item_img
+  > #reservation_airline_UL
+  > li:nth-child(5) {
+  background-image: url(../img/choose_item_img05.png);
+}
+.airline_choose_item > p {
+  position: relative;
+  top: 220px;
+  left: 60px;
+  transition: 0.5s;
+}
+.airline_choose_item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 0.7;
+}
+footer {
+  color: #e4e2e0;
+  font-size: 12px;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100vw;
+  background-color: #35687d;
+}
+#footerTop {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 40%;
+}
+#footerTop:hover,
+#footerIcon:hover,
+#footerMiddletop:hover {
+  cursor: pointer;
+}
+.footerMaintop {
+  height: 30px;
+}
+.footerMainB > p {
+  font-size: 11px;
+  margin-top: 10px;
+}
+.footerMaintop > p {
+  font-weight: bold;
+  font-size: 15px;
+}
+#footerMiddle {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+}
+#footerMiddletop {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+#footerMiddlemid {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+#footerIcon {
+  margin-top: 30px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+#footerBottom {
+  margin-top: 80px;
+}
+.on {
+  opacity: 1;
+  height: 120px;
+  z-index: 1001;
+}

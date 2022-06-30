@@ -1,0 +1,848 @@
+@charset "uft-8";
+
+
+
+/*데스크탑*/
+@media screen and (max-width:1440px) {
+
+
+    .home_circle{
+        top: 51%;
+    }
+
+
+    .home_circle > img.carrier{
+        top: -35%;
+        width: 45%;
+    }
+
+    #btn_prev, #btn_prev2{
+        left: 40%;
+        top: 90%;
+    }
+
+    #btn_next, #btn_next2{
+        left: 55%;
+        top: 90%;
+    }
+
+
+    /* promo_area영역 */
+
+    #promo_area{
+        padding:8em 4em 0;
+    }
+
+    .promo_area_inner .promo_left{
+        width: 50%;
+/*         padding-top: 3%; */
+    }
+
+    .promo_slide li > a > img{
+        width: 81%;
+    }
+    
+    .promo_right{
+        right: 12%;
+        width: 34%;
+        margin: 0 auto;
+  }
+
+
+  
+/* #payment_special영역 */
+
+
+#payment_special{
+    padding: 8em 4em 0;
+}
+
+.pay_spe_inner_txt, .pay_spe_inner_txt2{
+    padding-right: 12%;
+}
+
+.pay_spe_list, .pay_spe_list2{
+    justify-content:center;
+    padding-right: 12%;
+    gap: 5%;
+}
+
+
+.pay_spe_list li, .pay_spe_list2 li{
+    width: 20%;
+}
+
+
+.inquery{
+    width: 8%;
+    left: 83%;
+}
+
+
+}
+
+
+
+
+
+/*노트북*/
+@media screen and (max-width:1024px) {
+    .home_bg_area{
+        background: url(../img/main_img.jpg) no-repeat -300px center;
+        background-size: cover;
+        height: 900px;
+    }
+    
+
+
+    .home_bg_area_txt > strong {
+        font-size: 3em;
+    }
+  
+
+    .home_bg_area_txt > p {
+
+        font-size: 1.3em;
+    }
+
+
+    .home_circle{
+        left: -10%;
+    }
+
+    .home_circle > img.carrier{
+        top: -38%;
+    }
+
+    @keyframes airplane {
+        50%{
+
+        }
+    
+        100%{
+            left: 40%;
+            top: 15%;
+        }
+    }
+
+    .home_circle > p{
+        top: 23%;
+    }
+
+    @keyframes arrow {
+        100%{
+            top : 25%
+        }
+    }
+
+    /* main_container영역 */
+    .main_cont_content{
+        display: none;
+    }
+
+
+    .query_btn{
+        display: block;
+    }
+
+
+    /* promo_area영역 */
+
+    #promo_area{
+        padding:8em 8em 0;
+    }
+
+    #promo_area h3{
+        margin-bottom: 12%;
+    }
+
+    .promo_area_inner{
+        display: block;
+    }
+
+    .promo_right{
+        position: static;
+    }
+
+
+    .promo_area_inner .promo_left{
+        width: 61%;
+    }
+
+    .promo_slide li > a > img{
+        width: 100%;
+    }
+    
+    .promo_right{
+        right: 50%;
+        transform: translateX(-40%);
+        width: 50%;
+        margin-top: 5%;
+  }
+
+
+  .promo_right img{
+    width: 100%;
+  }
+
+
+
+/* #payment_special영역 */
+
+
+#payment_special{
+    padding:6em 1em 0;
+}
+.pay_spe_inner_txt, .pay_spe_inner_txt2{
+    justify-content: space-around;
+    margin-left: -6%;
+}
+
+
+.pay_spe_list, .pay_spe_list2{
+    justify-content:center;
+    margin-left: -10%;
+    gap: 2%;
+}
+
+
+.pay_spe_list li, .pay_spe_list2 li{
+    width: 18%;
+}
+
+
+
+}
+
+
+  /*아이패드 (768px)*/
+  @media screen and (max-width:991px) {
+  
+    .home_bg_area{
+        background-size: cover;
+        height: 700px;
+    }
+    
+    .home_circle > img.carrier{
+        top: -25%;
+    }
+
+    .promo_area_inner .promo_left{
+        width: 40%;
+    }
+
+    .promo_slide li > a > img{
+        width: 65%;
+    }
+    
+    .promo_right{
+        right: 40%;
+        transform: translateX(-75%);
+        width: 40%;
+        margin-top: -5%;
+  }
+
+
+  .promo_right img{
+    width: 100%;
+  }
+
+  
+/* #payment_special영역 */
+
+
+#payment_special{
+    padding:6em 1em 0;
+}
+.pay_spe_inner_txt, .pay_spe_inner_txt2{
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 5%;
+}
+
+
+.pay_spe_list, .pay_spe_list2{
+    justify-content:space-evenly;
+    width: 70%;
+    margin-left:-0.2%;
+}
+
+
+.pay_spe_list li, .pay_spe_list2 li{
+    width:100%;
+
+}
+
+
+
+/* hotels_inner_list영역 */
+
+.hotels_box{
+    width: 60%;
+}
+
+
+.popup{
+
+    top: 30%;
+    left: 35%;
+
+}
+
+
+.popup img{
+    width: 70%;
+}
+
+  }
+  
+  
+  
+  /*모바일*/
+  
+  @media screen and (max-width:767px) {
+  
+  
+
+    
+    .home_circle > p{
+        top: 28%;
+    }
+
+    @keyframes arrow {
+        100%{
+            top : 30%
+        }
+    }
+
+
+
+  /* #payment_special영역 */
+
+  .pay_spe_inner_txt, .pay_spe_inner_txt2{
+    width: 60%;
+    margin-left: 2.5%;
+}
+
+  .pay_spe_list, .pay_spe_list2{
+    justify-content:space-evenly;
+    width: 67%;
+    margin-left:-0.9%;
+}
+
+.pay_spe_list li a h2, .pay_spe_list2 li a h2{
+    font-size: 1.3em;
+} 
+
+
+
+/* hotels_inner_list영역 */
+
+.hotels_box{
+    width: 58%;
+}
+
+
+.box_right P{
+    font-size: 0.7em;
+}
+
+.box_right b{
+    font-size: 0.9em;
+}
+
+
+.box_right i{
+
+    font-size: 0.6em;
+}
+
+
+.inquery{
+    width: 13%;
+}
+
+.popup{
+
+    top: 10%;
+    left: 35%;
+
+}
+}
+/*모바일2*/
+
+
+@media screen and (max-width:576px) {
+
+    .home_bg_area{
+        background: url(../img/main_img.jpg) no-repeat -500px center;
+        height: 470px;
+    }
+    
+    .home_bg_area_txt{
+        width: 100%;
+        margin: -18% auto 0;
+    }
+
+    .home_bg_area_txt > strong {
+        font-size: 2.2em;
+    }
+
+
+    .home_bg_area_txt > p {
+
+        font-size: 0.9em;
+    }
+
+    .home_bg_area_txt > p br{
+        display: none;
+    }
+
+    .home_circle > img.carrier{
+        top: -26%;
+        width: 58%;
+    }
+
+
+        
+    .home_circle > p{
+        top: 31%;
+    }
+
+    @keyframes arrow {
+        100%{
+            top : 33%
+        }
+    }
+
+
+/* #main_cont_news 영역 */
+
+
+    #main_cont_news{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+
+    #main_cont_news h3{
+        font-size: 1.5em;
+    }
+
+
+    #main_cont_news h4{
+        font-size: 1em;
+        margin: 3% 0;
+    }
+
+    .dropdown{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main_cont_news_inner .new_list li, .main_cont_news_inner2 .new_list2 li{
+        width: 200px;
+        height: 200px;
+    }
+
+    #btn_prev, #btn_prev2{
+        width: 40px;
+        height: 40px;
+        line-height: 37px;
+        font-size: 1.5em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 40%;
+        top: 93%;
+    }
+
+    #btn_next, #btn_next2{
+        width: 40px;
+        height: 40px;
+        line-height: 37px;
+        font-size: 1.5em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 55%;
+        top: 93%;
+    }
+
+
+
+
+
+
+
+
+    /* promo_area영역 */
+
+
+    #promo_area{
+        padding:8em 0.5em 0;
+    }
+
+    .promo_slide li > a > img{
+        width: 50%;
+    }
+    
+    .promo_area_inner .promo_left{
+        margin-left: 0.2%;
+    }
+
+
+    .promo_right{
+        right: 40%;
+        transform: translateX(-115%);
+        width: 30%;
+        margin-top: -12%;
+}
+
+
+.promo_right img{
+    width: 100%;
+}
+
+
+  /* #payment_special영역 */
+
+.pay_spe_inner_txt, .pay_spe_inner_txt2{
+    width: 60%;
+    margin-left: 0%;
+}
+
+.pay_spe_inner h3, .pay_spe_inner2 h3{
+    font-size: 1.2em;
+}
+
+.pay_spe_inner_txt > p, .pay_spe_inner_txt2 > p{
+    font-size: 0.8em;
+}
+
+.pay_spe_inner_txt, .pay_spe_inner_txt2{
+    display: block !important;
+    margin-bottom: 1.8%;
+}
+
+.pay_spe_list, .pay_spe_list2{
+    justify-content:space-evenly;
+    width: 43%;
+    margin-left:-0.7%;
+}
+
+.pay_spe_list li a h2, .pay_spe_list2 li a h2{
+    font-size: 0.7em;
+}
+
+.pay_spe_list li a p, .pay_spe_list2 li a p{
+    font-size: 0.5em;
+    letter-spacing: 0.5px;
+} 
+
+
+
+
+/* hotelsAll영역 */
+
+#hotels_lookAll{
+    padding: 0 0 50px 0;
+}
+
+
+
+.hotels_inner_list{
+    width: 50%;
+    display: block;
+}
+
+
+.hotels_box{
+    width: 64%;
+    padding-left: 0;
+}
+
+.box_left{
+    width: 21%;
+    margin-right: 8%;
+}
+
+.box_left img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.box_right{
+    width: 28%;
+}
+
+.box_right P{
+    font-size: 0.4em;
+}
+
+.box_right b{
+    font-size: 0.6em;
+}
+
+
+.box_right i{
+
+    font-size: 0.3em;
+    letter-spacing: -2px;
+}
+
+
+.inquery{
+    width: 13%;
+}
+
+
+
+  .inquery{
+    width: 21%;
+}
+
+
+
+
+/* banner_bottom영역 */
+
+
+.banner_bottom{
+    height: 4.2em;
+
+}
+
+.banner_bottom a{
+    display: block;
+}
+
+.banner_bottom a img{
+    width: 100%;
+}
+
+
+
+
+
+/*footer영역*/
+
+#footerTop{
+    width: 100%;
+    text-align: center;
+    margin-left: 2.5%;
+}
+
+
+#footerTop> ul{
+    margin-right: 4%;
+}
+
+.footerMaintop >p{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.footerMainB >p{
+    font-size: 0.7em;
+    line-height: 1.8em;
+}
+
+#footerMiddle {
+    width: 100%;
+}
+
+#footerMiddletop{
+    width: 100%;
+    text-align: center;
+}
+
+
+#footerBottom {
+    margin-top: 4%;
+}
+
+}
+
+
+
+/*모바일3 갤럭시*/
+
+@media screen and (max-width:425px) {
+
+    .home_bg_area{
+        background: url(../img/main_img.jpg) no-repeat -400px center;
+        height: 380px;
+    }
+    
+    .home_bg_area_txt{
+
+        margin: -30% auto 0;
+    }
+
+    .home_bg_area_txt > strong {
+        font-size: 2em;
+    }
+
+
+    .home_bg_area_txt > p {
+        font-size: 0.8em;
+    }
+
+    .home_circle > p{
+        top: 39%;
+        width: 16px;
+    }
+
+    @keyframes arrow {
+        100%{
+            top : 40%
+        }
+    }
+
+
+
+
+
+
+    /* promo_area영역 */
+
+
+    #promo_area{
+        padding:4em 0.5em 0;
+    }
+
+    #promo_area h3{
+        
+        font-size: 1.1em;
+    }
+
+
+    .promo_slide li > a > img{
+        width: 48%;
+    }
+    
+    .promo_area_inner .promo_left{
+        margin-left: 0.1%;
+    }
+
+
+    .promo_right{
+        right: 40%;
+        transform: translateX(-118%);
+        width: 30%;
+        margin-top: -12%;
+}
+
+
+/* payment_special영역 */
+
+
+#payment_special {
+    padding: 3em 1em 0;
+}
+
+.pay_spe_inner {
+    width: 1280px;
+    margin: 0 auto 40px;
+}
+
+
+.pay_spe_list, .pay_spe_list2 {
+    justify-content: space-evenly;
+    width: 42%;
+    margin-left: -1%;
+    gap: 1%;
+}
+
+
+
+
+/* popup영역 */
+
+
+
+.popup{
+
+    top:5%;
+    left: 16%;
+
+}
+
+
+.popup img{
+    width: 50%;
+}
+
+
+
+
+
+/*footer영역*/
+
+#footerTop{
+    width: 100%;
+    text-align: center;
+    margin-left: 2.5%;
+}
+
+
+#footerTop> ul{
+    margin-right: 4%;
+}
+
+.footerMaintop >p{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.footerMainB >p{
+    font-size: 0.5em;
+    line-height: 2em;
+}
+
+#footerMiddle {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#footerMiddletop{
+    font-size: 0.6em;
+}
+
+#footerMiddlemid{
+    font-size: 0.6em;
+}
+
+#footerBottom{
+    font-size: 0.6em;
+}
+
+
+
+
+/* hotels_lookAll영역 */
+
+
+#hotels_lookAll{
+    padding: 0 1% 50px 1%;
+}
+
+
+
+.hotels_inner_list{
+    width: 46%;
+    display: block;
+}
+
+
+
+
+}
+
+
+
+/*모바일4 아이폰*/
+@media screen and (max-width:375px) {
+
+
+
+}

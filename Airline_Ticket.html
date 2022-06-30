@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| GAZZUA</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="./css/header2.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--fontawesome icon-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--아이콘-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--폰트 링크-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<!--아이템 폰트-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
+    <!--CSs링크-->
+    <link href="./css/AirLine.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="all_the_category">
+        <div id="logo_gaza">
+          <a href="./main.html"><img src="./img/로고.png" alt="" /></a>
+        </div>
+        <div id="all_the_menu">
+          <ul>
+            <li class="menu_02">
+              <a href="./Airline_Ticket.html"><p>항공권 예매</p></a>
+            </li>
+            <li class="menu_02">
+              <a href="./hotel.html"><p>숙소</p></a>
+            </li>
+            <li class="menu_02">
+              <a href="./lesuire.html"><p>레저&액티비티</p></a>
+            </li>
+            <li class="menu_02">
+              <a href="./service.html"><p>고객센터</p></a>
+            </li>
+          </ul>
+        </div>
+        <div id="login_menu">
+          <ul>
+            <li id="about_01">
+              <a href="./service.html"><p>도움말&문의</p></a>
+            </li>
+            <li id="login_01">
+              <a href=""><p>로그인</p></a>
+            </li>
+            <li id="admist_01">
+              <a href=""><p>회원가입</p></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="AirLine">
+      <!--전체 div-->
+      <div id="AirLine_main">
+        <div id="AirLine_reservation_top">
+          <div id="AirLine_background">
+            <div id="AirLine_background_img"></div>
+          </div>
+          <div id="AirLine_reservation">
+            <!--항공권 예약 창-->
+            <div id="reservation_option">
+              <div id="reservation_flex_user_select">
+                <div class="reservation_menu" id="reservation_menu_1">
+                  <ion-icon name="airplane"></ion-icon>
+                  <p>왕복</p>
+                  <ion-icon
+                    class="down_icon"
+                    name="caret-down-outline"
+                    style="margin: 5px"
+                  ></ion-icon>
+                </div>
+                <div class="reservation_menu" id="reservation_menu_2">
+                  <ion-icon
+                    name="people"
+                    style="transform: translateY(5px)"
+                  ></ion-icon>
+                  <p>성인 1명</p>
+                  <ion-icon
+                    name="caret-down-outline"
+                    style="margin: 5px"
+                  ></ion-icon>
+                </div>
+                <div class="reservation_menu">
+                  <ion-icon
+                    name="rocket"
+                    style="transform: translateY(5px)"
+                  ></ion-icon>
+                  <p>일반석</p>
+                  <ion-icon
+                    name="caret-down-outline"
+                    style="margin: 5px"
+                  ></ion-icon>  
+                </div>
+              </div>
+              <div id="reservation_flex_hide_Menu">
+                <!--숨겨진 메뉴-->
+                <div class="HideMenu_1">
+                  <p>왕복</p>
+                  <p>편도</p>
+                  <p>다구간</p>
+                </div>
+                <div class="HideMenu_2">
+                  <div id="reservation_flex_hidden_Menu">
+                <p>성인</p>
+                <p>아동</p>
+                <p>노인</p>
+                  </div>
+                </div>
+              </div>
+              <div id="reservation_place_user_select">
+                <div id="reservation_palce_background">
+                  <div id="reservation_select">
+                    <div id="reservation_starting_point">
+                      <p>출발지</p>
+                      <div class="reservation_starting_point_option">
+                        <input type="text" placeholder="국가,도시 또는 공항" />
+                      </div>
+                    </div>
+                    <div id="exchange_icon">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div id="reservation_destination">
+                      <p>도착지</p>
+                      <div class="reservation_starting_point_option">
+                        <input type="text" placeholder="국가,도시 또는 공항" />
+                      </div>
+                    </div>
+                    <div id="reservation_time">
+                      <div class="reservation_date" id="first_date">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>2022Y 6M 22D (토) 출발</p>
+                      </div>
+                      <div class="reservation_date" id="second_date">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>2022Y 6M 25D (화) 도착</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--예약창 마무리 -->
+                </div>
+              </div>
+            </div>
+            <div id="reservation_search">
+              <div id="reservation_search_box">
+                <p>항공권 검색</p>
+              </div>
+            </div>
+            <!--두번째 컨텐츠 시작 airLine_reservation-->
+            <div id="reservation_square_nav">
+              <div id="reservation_quare_nav_top">
+                <div class="reservation_nav_bar" id="reservation_nav_bar01">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <p>나의 예약정보</p>
+                </div>
+                <div class="reservation_nav_bar" id="reservation_nav_bar02">
+                  <i class="fa-solid fa-money-bill-trend-up"> </i>
+                  <p>지역별로 가격비교</p>
+                </div>
+                <div class="reservation_nav_bar" id="reservation_nav_bar03">
+                  <i class="fa-solid fa-plane-up"></i>
+                  <p>항공편 현황보기</p>
+                </div>
+                <div class="reservation_nav_bar" id="reservation_nav_bar04">
+                  <i class="fa-solid fa-mobile"></i>
+                  <p style="transform: translateX(-10px)">앱 다운로드</p>
+                </div>
+              </div>
+              <div id="reservation_square_banner">
+                <ul id="reservation_banner_box">
+                  <li class="banner_img">
+                    <div id="first_banner_ment">
+                      <ion-icon
+                        name="sparkles-outline"
+                        style="color: deepskyblue"
+                      ></ion-icon>
+                      나랑가자 회원가입하고 지금당장 할인 받아봐!!
+                      <ion-icon
+                        name="sparkles-outline"
+                        style="color: deepskyblue"
+                      ></ion-icon>
+                    </div>
+                    <ul id="banner_sub_ment">
+                      <li class="sub_ment">
+                        <i class="fa-solid fa-hotel" style="color: brown"></i>
+                        호텔,숙소 예약시 최대 25% 할인!
+                      </li>
+                      <li class="sub_ment">
+                        <ion-icon
+                          name="planet-outline"
+                          style="color: darkviolet"
+                        ></ion-icon>
+                        나랑가자 회원만의 여행패키지 제공!
+                      </li>
+                      <li class="sub_ment">
+                        <ion-icon
+                          name="cash-outline"
+                          style="color: darkcyan"
+                        ></ion-icon>
+                        매년 최대 사용금액의 10% 페이백!
+                      </li>
+                    </ul>
+                    <div id="reservation_check_my_reservation">
+                      <p>예약정보 확인하기</p>
+                    </div>
+                    <div id="reservation_login_ment">
+                      <p>아직 회원가입을 안하셨나요?</p>
+                      <a href="" style="color: rgba(67, 127, 254)"
+                        >회원가입하기</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--두 번째 컨텐츠 끝-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reservation_slide_banner">
+        <!--슬라이드 배너 시작-->
+        <div id="reservation_silde_banner_box">
+          <div id="reservation_preBtn">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div id="reservation_banner_img">
+            <ul id="reservation_first_banner_item">
+              <li class="reservation_banner_imgitem"></li>
+              <li class="reservation_banner_imgitem"></li>
+              <li class="reservation_banner_imgitem"></li>
+              <li class="reservation_banner_imgitem"></li>
+            </ul>
+          </div>
+          <div id="reservation_ntxBtn">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div id="reservation_abroad_trip_packge">
+        <div id="reservation_abroad_trip_packge_title">
+          <p>유럽 여행 한눈에 보기</p>
+          <img src="./img/airplaneicon.png" />
+        </div>
+        <div id="reservation_abroad_trip_packge_item">
+          <div id="reservation_abroad_trip_packge_item_img">
+            <div id="reservation_abroad_trip_packge_item_big_item">
+              <div id="reservation_abroad_trip_packge_item_big_img">
+                <p>유럽 여행 </br>
+                  패키지</p>
+                  <ul id="big_item_sub_menu">
+                    <li class="europ">동유럽</li>
+                    <li class="europ">북유럽</li>
+                    <li class="europ">서유럽</li>
+                  </ul>
+                  <ul id="reservation_abroad_trip_packge_item_sub_img">
+                    <li class="abroad_trip_packge_item_sub_img">
+                      <div id="abroad_trip_packge_item_sub_info01">
+                        <strong>동유럽 일주일 패키지/ 프라하/ 부다페스트/ 빈 </strong>
+                      <p>#야경 #자연경관 #폭포 </p>
+                      <p>972,000원 </p>
+                      </div>
+                    </li>
+                    <li class="abroad_trip_packge_item_sub_img">
+                      <div id="abroad_trip_packge_item_sub_info02">
+                        <strong>북유럽 6일 / 노르웨이 / 스웨덴 / 핀란드 </strong>
+                      <p>#등산 좋아 #산을 좋아해 </p>
+                      <p>822,000원 </p>
+                      </div>
+                    </li>
+                    <li class="abroad_trip_packge_item_sub_img">
+                      <div id="abroad_trip_packge_item_sub_info03">
+                        <strong>서유럽 14박15일/ 파리/ 독일/ 영국 </strong>
+                      <p>#축구 #서유럽 #유럽의 중심 #파리생제르망 </p>
+                      <p>2,882,000원 </p>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="reservation_airline_choose">
+          <div id="reservation_airline_choose_title"><p>항공사별로 가격비교해보기</p>
+            <img src="./img/icon2.png" /></div>
+          <div id="reservation_airline_choose_item">
+            <div id="reservation_airline_choose_item_img">
+              <ul id="reservation_airline_UL">
+                <li class="airline_choose_item">
+                  <p>대한항공</p>
+                </li>
+                <li class="airline_choose_item">
+                  <p>아시아나항공</p>
+                </li>
+                <li class="airline_choose_item">
+                  <p>이스타 항공</p>
+                </li>
+                <li class="airline_choose_item">
+                  <p>에어 서울</p>
+                </li>
+                <li class="airline_choose_item">
+                  <p>제주 에어</p>
+                </li>
+              </ul>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footerTop">
+            <ul class="footerMain">
+                <li class="footerMaintop"><p>Company</p></li>
+                <li class="footerMainB"><p> About us</p></li>
+                <li class="footerMainB"><p> How We Work</p></li>
+                <li class="footerMainB"><p> Mobile</p></li>
+            </ul>
+            <ul class="footerMain">
+                <li class="footerMaintop"><p>Contact</p></li>
+                <li class="footerMainB"><p>Help/FAQ</p></li>
+                <li class="footerMainB"><p>Hoteliers</p></li>
+                <li class="footerMainB"><p>Affiliate Program</p></li>
+            </ul>
+            <ul class="footerMain">
+                <li class="footerMaintop"><p>Operation</p></li>
+                <li class="footerMainB"><p>Hotel Reservation</p></li>
+                <li class="footerMainB"><p>Activity</p></li>
+                <li class="footerMainB"><p>Flight Reservation</p></li>
+            </ul>
+            <ul class="footerMain">
+                <li class="footerMaintop"><p>More</p></li>
+                <li class="footerMainB"><p>Browse By Location</p></li>
+                <li class="footerMainB"><p>Best Price guarantee</p></li>
+            </ul>
+        </div>
+        <div id="footerMiddle">
+            <ul id="footerMiddletop">
+                <li><p>Privacy Policy</p></li>
+                <li><p>Cookie Policy</p></li>
+                <li><p>Terms of Use</p></li>
+                <li><p>©2022 Gazzua</p></li>
+            </ul>
+            <p id="footerMiddlemid">Search cheap hotels with Gazzua. Use the hotel finder to search for the cheapest hotel deal for all major destinations around the world. Gazzua searches hundreds of hotel booking sites to help you find hotels and book hotels that suit you best. Since Gazzua searches many hotel sites at once, you can find discount hotels quickly. Discover hotel discounts now and make your hotel reservation today.</p>
+            <ul id="footerIcon">
+                <li><i class="fa-brands fa-facebook-square" style="font-size:20px; color: white"></i></li>
+                <li><i class="fa-brands fa-instagram" style="font-size:20px; color: white"></i></li>
+                <li><i class="fa-brands fa-twitter" style="font-size:20px; color: white"></i></li>
+                <li><i class="fa-brands fa-youtube" style="font-size:20px; color: white"></i></li>
+            </ul>
+        </div>
+        <div id="footerBottom">
+            <p>Gazzua is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+        </div>
+
+
+    </footer>
+    </div>
+    <script src="./js/Airline.js"></script>
+  </body>
+</html>

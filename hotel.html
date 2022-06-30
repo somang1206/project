@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| GAZZUA</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="./css/hotel.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <div id="hotelContainer">
+      <header>
+        <div id="all_the_category">
+          <div id="logo_gaza">
+            <a href="./main.html"><img src="./img/로고.png" alt="" /></a>
+          </div>
+          <div id="all_the_menu">
+            <ul>
+              <li class="menu_02">
+                <a href="./Airline_Ticket.html"><p>항공권 예매</p></a>
+              </li>
+              <li class="menu_02">
+                <a href="./hotel.html"><p>숙소</p></a>
+              </li>
+              <li class="menu_02">
+                <a href="./lesuire.html"><p>레저&액티비티</p></a>
+              </li>
+              <li class="menu_02">
+                <a href="./service.html"><p>고객센터</p></a>
+              </li>
+            </ul>
+          </div>
+          <div id="login_menu">
+            <ul>
+              <li id="about_01">
+                <a href="./service.html"><p>도움말&문의</p></a>
+              </li>
+              <li id="login_01">
+                <a href=""><p>로그인</p></a>
+              </li>
+              <li id="admist_01">
+                <a href=""><p>회원가입</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div id="hotelMain">
+        <div id="hotelTop">
+          <div id="hotelTitle">
+            <h1>모든숙박예매는 여기서</h1>
+            <p>
+              전세계 200만개 이상의 다양한 숙소를 최저가 요금으로 예약하세요!
+            </p>
+          </div>
+        </div>
+        <form action="/search" id="hotelSearchbox">
+          <input
+            id="hotelLocate"
+            type="text"
+            name="locate"
+            placeholder="어디로 향하시나요?"
+          />
+          <input
+            id="hotelCheck"
+            type="text"
+            name="locate"
+            placeholder="체크인-체크아웃"
+          />
+          <input
+            id="hotelPeople"
+            type="text"
+            name="locate"
+            placeholder="성인 2명  •  아동 0명  •  객실1개"
+          />
+          <input id="hotelSearch" type="submit" value="검색" />
+        </form>
+        <div id="hotelMenu">
+          <ul>
+            <li>추천</li>
+            <li>초특가 숙소</li>
+            <li>국내숙소</li>
+            <li>해외숙소</li>
+          </ul>
+          <div id="hotelVarious">
+            <a class="hotelKind">
+              <img src="./img/호텔1.png" alt="" />
+              <p>모텔</p>
+            </a>
+            <a class="hotelKind">
+              <img src="./img/호텔2.png" alt="" />
+              <p>호텔</p>
+            </a>
+            <a class="hotelKind">
+              <img src="./img/호텔4.png" alt="" />
+              <p>펜션/풀빌라</p>
+            </a>
+            <a class="hotelKind">
+              <img src="./img/호텔6.png" alt="" />
+              <p>리조트</p>
+            </a>
+            <a class="hotelKind">
+              <img src="./img/호텔7.png" alt="" />
+              <p>글램핑/캠핑</p>
+            </a>
+            <a class="hotelKind">
+              <img src="./img/호텔8.png" alt="" />
+              <p>게하/한옥</p>
+            </a>
+          </div>
+        </div>
+        <div class="hotelKorea">
+          <h1>대한민국 인기여행지</h1>
+          <div class="hotelKoreamain">
+            <div id="prevBtn">
+              <i
+                class="fa-solid fa-circle-arrow-left"
+                style="color: #b2dff4; font-size: 50px"
+              ></i>
+            </div>
+            <div id="hotelbanner">
+              <ul id="hotelKoreaVm">
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/서울.jpg" alt="" />
+                  <p>서울</p>
+                  <p>숙소 2,305개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/제주도.png" alt="" />
+                  <p>제주도</p>
+                  <p>숙소 1,036개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/부산.png" alt="" />
+                  <p>부산</p>
+                  <p>숙소 661개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/강릉.jpg" alt="" />
+                  <p>강릉</p>
+                  <p>숙소 819개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/속초.png" alt="" />
+                  <p>속초</p>
+                  <p>숙소 142개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/경주.png" alt="" />
+                  <p>경주</p>
+                  <p>숙소 90개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/인천.jpg" alt="" />
+                  <p>인천</p>
+                  <p>숙소 1,669개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/여수.jpg" alt="" />
+                  <p>여수</p>
+                  <p>숙소 682개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/대전.jpg" alt="" />
+                  <p>대전</p>
+                  <p>숙소 426개</p>
+                </li>
+                <li class="hotelKoreaV">
+                  <img class="hotelKoreaimg" src="./img/대구2.jpg" alt="" />
+                  <p>대구</p>
+                  <p>숙소 579개</p>
+                </li>
+              </ul>
+            </div>
+            <div id="nextBtn">
+              <i
+                class="fa-solid fa-circle-arrow-right"
+                style="color: #b2dff4; font-size: 50px"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="hotelBestKorea">
+          <div id="hotelTextbox">
+            <h1>취향저격 Best숙소</h1>
+            <p>전세계 인기숙소 추천</p>
+          </div>
+          <div id="hotelBestmain">
+            <ul id="hotelBest">
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg1"></div>
+                <div class="hotelBestbox">
+                  <h2>SLS Cancun</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star"></i> Good 8.6
+                  </p>
+                  <p>Cancún, QR, Mexico</p>
+                </div>
+              </li>
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg2"></div>
+                <div class="hotelBestbox">
+                  <h2>The Singular Patagonia</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i>
+                    Excellent 9.5
+                  </p>
+                  <p>Puerto Natales, Chile</p>
+                </div>
+              </li>
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg3"></div>
+                <div class="hotelBestbox">
+                  <h2>Beach Club By Haadtien</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star"></i> Great 8.9
+                  </p>
+                  <p>Ko Tao, Thailand</p>
+                </div>
+              </li>
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg4"></div>
+                <div class="hotelBestbox">
+                  <h2>One&amp;Only Portonovi</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i>
+                    Excellent 9.5
+                  </p>
+                  <p>Herceg Novi, Montenegro</p>
+                </div>
+              </li>
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg5"></div>
+                <div class="hotelBestbox">
+                  <h2>Hotel Indigo Bali Seminyak Beach</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i>
+                    Excellent 9.3
+                  </p>
+                  <p>Denpasar, BA, Indonesia</p>
+                </div>
+              </li>
+              <li class="hotelBestV">
+                <div class="hotelBestimg" id="hotelBestimg6"></div>
+                <div class="hotelBestbox">
+                  <h2>Ion Adventure Hotel</h2>
+                  <p>
+                    <i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star" style="color: #6bc8f0"></i
+                    ><i class="fa-solid fa-star"></i> Good 7.8
+                  </p>
+                  <p>Hveragerdi, Iceland</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hotelKorea">
+          <h1>해외 인기여행지</h1>
+          <div class="hotelKoreamain">
+            <div id="prevBtn2">
+              <i
+                class="fa-solid fa-circle-arrow-left"
+                style="color: #b2dff4; font-size: 50px"
+              ></i>
+            </div>
+            <div id="hotelbanner">
+              <ul id="hotelGlobalVm">
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/방콕.jpg" alt="" />
+                  <p>방콕</p>
+                  <p>숙소 10,282개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/호치민.jpg" alt="" />
+                  <p>호치민</p>
+                  <p>숙소 9,999개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/하노이.jpg" alt="" />
+                  <p>하노이</p>
+                  <p>숙소 6,570개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/파타야.jpg" alt="" />
+                  <p>파타야</p>
+                  <p>숙소 9,632개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/자카르타.jpg" alt="" />
+                  <p>자카르타</p>
+                  <p>숙소 9,677개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/마닐라.jpg" alt="" />
+                  <p>마닐라</p>
+                  <p>숙소 7,622개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/발리.jpg" alt="" />
+                  <p>발리</p>
+                  <p>숙소 10,122개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/다낭.jpg" alt="" />
+                  <p>다낭</p>
+                  <p>숙소 9,882개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/도쿄.jpg" alt="" />
+                  <p>도쿄</p>
+                  <p>숙소 5,237개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/프놈펜.jpg" alt="" />
+                  <p>프놈펜</p>
+                  <p>숙소 4,210개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/나트랑.jpg" alt="" />
+                  <p>나트랑</p>
+                  <p>숙소 8,622개</p>
+                </li>
+                <li class="hotelGlobalV">
+                  <img class="hotelKoreaimg" src="./img/치앙마이.jpg" alt="" />
+                  <p>치앙마이</p>
+                  <p>숙소 6,022개</p>
+                </li>
+              </ul>
+            </div>
+            <div id="nextBtn2">
+              <i
+                class="fa-solid fa-circle-arrow-right"
+                style="color: #b2dff4; font-size: 50px"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footerTop">
+          <ul class="footerMain">
+            <li class="footerMaintop"><p>Company</p></li>
+            <li class="footerMainB"><p>About us</p></li>
+            <li class="footerMainB"><p>How We Work</p></li>
+            <li class="footerMainB"><p>Mobile</p></li>
+          </ul>
+          <ul class="footerMain">
+            <li class="footerMaintop"><p>Contact</p></li>
+            <li class="footerMainB"><p>Help/FAQ</p></li>
+            <li class="footerMainB"><p>Hoteliers</p></li>
+            <li class="footerMainB"><p>Affiliate Program</p></li>
+          </ul>
+          <ul class="footerMain">
+            <li class="footerMaintop"><p>Operation</p></li>
+            <li class="footerMainB"><p>Hotel Reservation</p></li>
+            <li class="footerMainB"><p>Activity</p></li>
+            <li class="footerMainB"><p>Flight Reservation</p></li>
+          </ul>
+          <ul class="footerMain">
+            <li class="footerMaintop"><p>More</p></li>
+            <li class="footerMainB"><p>Browse By Location</p></li>
+            <li class="footerMainB"><p>Best Price guarantee</p></li>
+          </ul>
+        </div>
+        <div id="footerMiddle">
+          <ul id="footerMiddletop">
+            <li><p>Privacy Policy</p></li>
+            <li><p>Cookie Policy</p></li>
+            <li><p>Terms of Use</p></li>
+            <li><p>©2022 Gazzua</p></li>
+          </ul>
+          <p id="footerMiddlemid">
+            Search cheap hotels with Gazzua. Use the hotel finder to search for
+            the cheapest hotel deal for all major destinations around the world.
+            Gazzua searches hundreds of hotel booking sites to help you find
+            hotels and book hotels that suit you best. Since Gazzua searches
+            many hotel sites at once, you can find discount hotels quickly.
+            Discover hotel discounts now and make your hotel reservation today.
+          </p>
+          <ul id="footerIcon">
+            <li>
+              <i
+                class="fa-brands fa-facebook-square"
+                style="font-size: 20px; color: white"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-instagram"
+                style="font-size: 20px; color: white"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-twitter"
+                style="font-size: 20px; color: white"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-youtube"
+                style="font-size: 20px; color: white"
+              ></i>
+            </li>
+          </ul>
+        </div>
+        <div id="footerBottom">
+          <p>
+            Gazzua is part of Booking Holdings Inc., the world leader in online
+            travel & related services.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/hotel.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f82e05bb6f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

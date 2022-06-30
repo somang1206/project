@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#red_header {
+  margin: 0 auto;
+  background-color: #b2dff4;
+  height: 22rem;
+  width: 100%;
+}
+
+h2 > a {
+  margin: 0 auto;
+  text-decoration-line: none;
+  color: #fff;
+}
+
+#header_img {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#all_service {
+  margin: 0 auto;
+  width: 1280px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+#side_bar {
+  float: left;
+  display: block;
+  width: auto;
+  list-style: none;
+  padding-top: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 4rem;
+  cursor: pointer;
+}
+
+#top_link {
+  float: left;
+  margin-left: 233px;
+  width: 700px;
+  font-size: 0.8rem;
+  word-spacing: 15px;
+  line-height: 2.3rem;
+  border-bottom: solid 1px #2e2e2e;
+  padding-top: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top_link_sub {
+  color: rgba(0, 0, 0, 0.6);
+}
+.clicked {
+  color: #b2dff4;
+}
+
+.side_bar_menu:hover {
+  color: #6bc8f0;
+}
+
+.side_bar_menu3 {
+  color: #6bc8f0;
+}
+
+#que1 {
+  margin-left: 335px;
+  margin-top: 80px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que2 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que3 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que4 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que5 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que6 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#que7 {
+  margin-left: 335px;
+  padding: 34px 0;
+  width: 700px;
+  font-size: 1rem;
+  line-height: normal;
+  border-bottom: solid 1px #2e2e2e;
+  cursor: pointer;
+}
+
+#answer-1 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-2 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-2_div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#answer-3 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 300%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-4 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-4_div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#answer-5 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-5_div1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#answer-5_np {
+  margin-bottom: 20px;
+}
+
+#answer-5_kakao {
+  margin-top: 20px;
+}
+
+#answer-6 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-6_div {
+  margin-top: 30px;
+}
+
+#answer-7 {
+  margin-left: 335px;
+  padding: 34px 14px;
+  width: 700px;
+  font-size: 0.9rem;
+  background-color: lightblue;
+  width: 700px;
+  line-height: 230%;
+  display: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#answer-7_div {
+  margin-top: 30px;
+}

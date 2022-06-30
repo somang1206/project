@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Nanum Gothic", sans-serif;
+}
+#hotelMain {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#hotelTop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+#hotelTitle > h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+#hotelSearchbox {
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  width: 1280px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 20px 10px;
+}
+#hotelSearchbox > input {
+  border: 5px solid skyblue;
+  border-radius: 10px;
+}
+#hotelSearchbox > input:focus {
+  outline: none;
+}
+#hotelLocate {
+  padding-left: 20px;
+  width: 40%;
+}
+#hotelCheck {
+  padding-left: 20px;
+  width: 20%;
+}
+#hotelPeople {
+  padding-left: 20px;
+  width: 30%;
+}
+#hotelSearch {
+  text-align: center;
+  width: 8%;
+  background-color: skyblue;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#hotelMenu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1280px;
+  margin-top: 130px;
+}
+#hotelMenu > ul {
+  width: 100%;
+  height: 50px;
+  padding: 0 10%;
+  border-bottom: 2px solid #e4e2e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+#hotelMenu > ul > li {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#hotelMenu > ul > li:hover {
+  border-bottom: 3px solid #6bc8f0;
+  cursor: pointer;
+}
+#hotelVarious {
+  padding: 0 50px;
+  padding-bottom: 50px;
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hotelKind {
+  margin-top: 50px;
+  text-align: center;
+  width: 30%;
+}
+.hotelKind:hover {
+  cursor: pointer;
+  color: #6bc8f0;
+}
+
+.hotelKind > p {
+  margin-top: 8px;
+  font-size: 15px;
+}
+.hotelKorea {
+  text-align: center;
+  width: 1280px;
+  margin-top: 100px;
+}
+.hotelKoreamain {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hotelbanner {
+  width: 90%;
+  display: flex;
+  overflow: hidden;
+}
+#prevBtn,
+#prevBtn2,
+#nextBtn,
+#nextBtn2 {
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+#hotelKoreaVm,
+#hotelGlobalVm {
+  padding-top: 12px;
+  transition: all 1s;
+  display: flex;
+}
+.hotelKoreaimg {
+  box-shadow: 3px 3px grey;
+  border-radius: 50%;
+  height: 115px;
+  transition: all 0.2s linear;
+}
+.hotelKoreaV,
+.hotelGlobalV {
+  min-width: 190px;
+  text-align: center;
+}
+.hotelBestV {
+  min-width: 190px;
+  text-align: center;
+}
+.hotelKoreaimg:hover {
+  transform: scale(1.2);
+}
+.hotelKoreaV > p:nth-child(2),
+.hotelGlobalV > p:nth-child(2) {
+  margin-top: 10px;
+  font-weight: bold;
+}
+#hotelBestKorea {
+  border-radius: 50px;
+  background-color: aliceblue;
+  padding: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-top: 130px;
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#hotelBestmain {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+#hotelBest {
+  transition: all 1s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+.hotelBestbox {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+.hotelBestV {
+  transition: all 1s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  width: 500px;
+}
+.hotelBestimg {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 80%;
+  width: 400px;
+  height: 300px;
+}
+.hotelBestV:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#hotelBestimg1 {
+  background-image: url("../img/best2.jpg");
+}
+#hotelBestimg2 {
+  background-image: url("../img/best1.jpg");
+}
+#hotelBestimg3 {
+  background-image: url("../img/best3.jpg");
+}
+#hotelBestimg4 {
+  background-image: url("../img/best4.jpg");
+}
+#hotelBestimg5 {
+  background-image: url("../img/best5.jpg");
+}
+#hotelBestimg6 {
+  background-image: url("../img/best6.jpg");
+}
+
+#hotelPage {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 50%;
+}
