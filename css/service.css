@@ -60,7 +60,7 @@ h2 > a {
   color: #b2dff4;
 }
 
-.side_bar_menu:hover {
+.side_bar_menu:hover a{
   color: #6bc8f0;
 }
 
