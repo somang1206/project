@@ -2,7 +2,7 @@
 
 
 /* home 영역 */
-body{
+body, html{
     overflow-x: hidden;
 }
 
@@ -529,7 +529,7 @@ body{
 
 #promo_area{
     width: 100%;
-    padding: 100px 0 150px;
+    padding: 100px 300px 150px;
 }
 
 #promo_area h3{
@@ -541,15 +541,16 @@ body{
 }
 
 .promo_area_inner{
-    width: 1280px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     position: relative;
+    left: 0;
+    top: 0;
 }
 
 .promo_area_inner .promo_left{
     width: 60%;
-    height: 27em;
     overflow: hidden;
 }
 
@@ -557,43 +558,50 @@ body{
 
 .promo_slide{
     width: 7820px;
-    height:27em;
     display: inline-flex;
     text-align: left;
     transition: all 1s;
+    position: static;
 }
 
 .promo_slide li{
     width: 100%;
-    height: 27em;
-
 }
 
+.promo_slide li > a{
+    width:100%;
+    display: inline-block;
+}
+
+
 .promo_slide li > a > img{
-    width: 98%;
+    max-width: 100%;
     border-radius: 20px;
 }
 
 .promo_right{
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 40%;
     height: auto;
     z-index: 50;
     text-align: right;
 }
 
+
+
+.promo_right_up{
+    margin-bottom: 5% ;
+    width: 100%;
+}
+
+.promo_right_up a{
+    width: 100%;
+    display: inline-block;
+}
+
+
 .promo_right img{
-    width: 90%;
-    margin-bottom: 2%;
+    width: 88%;
 }
-
-.promo_right_down img{
-    margin-bottom: 0 !important;
-}
-
-
 
 
 
@@ -759,12 +767,16 @@ body{
 .banner_bottom{
     text-align: center;
     width: 100%;
-    height: 10.25em;
     background-color: #f6f6f6;
 }
 
 .banner_bottom a{
     display: block;
+    width: 100%;
+}
+
+.banner_bottom a img{
+    max-width: 100%;
 }
 
 
@@ -827,13 +839,12 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width:100vw;
+    width:100%;
     background-color: #35687D;
 }
 #footerTop{
     color:whitesmoke;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     width:40%;
 }
@@ -863,21 +874,24 @@ footer{
 #footerMiddletop{
     width:30%;
     display:flex;
-    justify-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-#footerMiddlemid{
-    margin-top: 25px;
-    width:100%;
-    text-align: center;
-}
+
 #footerIcon{
     margin-top: 30px;
-    width:10%;
+    width:100%;
     display:flex;
     justify-content: center;
-    justify-content: space-between;
 }
+
+#footerIcon li{
+    margin-right: 5%;
+}
+
+#footerIcon li:last-child{
+    margin-right: 0 !important;
+}
+
 #footerBottom{
-    margin-top: 80px;
+    margin-top: 30px;
 }

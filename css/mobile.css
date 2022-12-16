@@ -41,12 +41,6 @@
     .promo_slide li > a > img{
         width: 81%;
     }
-    
-    .promo_right{
-        right: 12%;
-        width: 34%;
-        margin: 0 auto;
-  }
 
 
   
@@ -114,6 +108,8 @@
         top: -38%;
     }
 
+
+
     @keyframes airplane {
         50%{
 
@@ -148,41 +144,43 @@
 
     /* promo_area영역 */
 
-    #promo_area{
-        padding:8em 8em 0;
-    }
+
 
     #promo_area h3{
         margin-bottom: 12%;
     }
 
     .promo_area_inner{
-        display: block;
+        flex-direction: column;
+        width: 100%;
+
     }
 
-    .promo_right{
-        position: static;
-    }
 
 
     .promo_area_inner .promo_left{
-        width: 61%;
+        width: 80%;
+        margin: 0 0 0 60px;
+    }
+
+    .promo_slide{
+        text-align: center;
     }
 
     .promo_slide li > a > img{
-        width: 100%;
+        max-width: 92%;
+        display: inline-block;
     }
     
     .promo_right{
-        right: 50%;
-        transform: translateX(-40%);
-        width: 50%;
-        margin-top: 5%;
-  }
-
+        width:100%;
+        margin-top:7%;
+        text-align: center;
+    }
 
   .promo_right img{
-    width: 100%;
+    max-width: 70%;
+    text-align: center;
   }
 
 
@@ -211,6 +209,21 @@
 }
 
 
+/*footer*/
+
+#footerTop{
+    width: 100%;
+}
+
+#footerMiddle{
+    width: 100%;
+}
+
+#footerMiddletop{
+    width: 100%;
+}
+
+
 
 }
 
@@ -227,25 +240,31 @@
         top: -25%;
     }
 
+
     .promo_area_inner .promo_left{
-        width: 40%;
+        width: 100%;
+        margin: 0 0 0 -70px;
     }
 
     .promo_slide li > a > img{
-        width: 65%;
+        width: 58%;
     }
     
     .promo_right{
-        right: 40%;
-        transform: translateX(-75%);
-        width: 40%;
-        margin-top: -5%;
-  }
+        width:100%;
+
+    }
+
+    .promo_right img{
+        max-width: 72%;
+    }
 
 
-  .promo_right img{
-    width: 100%;
-  }
+
+
+
+
+
 
   
 /* #payment_special영역 */
@@ -336,6 +355,40 @@
 
 
 
+/*promo*/
+
+
+
+.promo_area_inner .promo_left{
+    width: 100%;
+    overflow:unset;
+}
+
+.promo_slide{
+    margin-left: -5.5%;
+}
+
+.promo_slide li > a > img{
+    width: 83.6%;
+
+}
+
+.promo_right{
+    width:100%;
+    margin-top: 12%;
+}
+
+.promo_right img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
 /* hotels_inner_list영역 */
 
 .hotels_box{
@@ -356,6 +409,9 @@
 
     font-size: 0.6em;
 }
+
+
+
 
 
 .inquery{
@@ -477,25 +533,16 @@
     /* promo_area영역 */
 
 
-    #promo_area{
-        padding:8em 0.5em 0;
+
+    .promo_slide{
+        margin-left: -50.6%;
     }
 
     .promo_slide li > a > img{
-        width: 50%;
-    }
-    
-    .promo_area_inner .promo_left{
-        margin-left: 0.2%;
+        max-width: 100%;
     }
 
 
-    .promo_right{
-        right: 40%;
-        transform: translateX(-115%);
-        width: 30%;
-        margin-top: -12%;
-}
 
 
 .promo_right img{
@@ -625,16 +672,9 @@
 
 /*footer영역*/
 
-#footerTop{
-    width: 100%;
-    text-align: center;
-    margin-left: 2.5%;
-}
 
 
-#footerTop> ul{
-    margin-right: 4%;
-}
+
 
 .footerMaintop >p{
     font-weight: bold;
@@ -659,6 +699,8 @@
 #footerBottom {
     margin-top: 4%;
 }
+
+
 
 }
 
@@ -715,7 +757,6 @@
         font-size: 1.1em;
     }
 
-
     .promo_slide li > a > img{
         width: 48%;
     }
@@ -724,13 +765,9 @@
         margin-left: 0.1%;
     }
 
+   
 
-    .promo_right{
-        right: 40%;
-        transform: translateX(-118%);
-        width: 30%;
-        margin-top: -12%;
-}
+
 
 
 /* payment_special영역 */
@@ -778,20 +815,12 @@
 
 /*footer영역*/
 
-#footerTop{
-    width: 100%;
-    text-align: center;
-    margin-left: 2.5%;
-}
 
-
-#footerTop> ul{
-    margin-right: 4%;
-}
 
 .footerMaintop >p{
     font-weight: bold;
     font-size: 0.9em;
+    
 }
 
 .footerMainB >p{
@@ -800,15 +829,10 @@
 }
 
 #footerMiddle {
-    width: 100%;
     margin-top: 25px;
 }
 
 #footerMiddletop{
-    font-size: 0.6em;
-}
-
-#footerMiddlemid{
     font-size: 0.6em;
 }
 
@@ -833,7 +857,9 @@
     display: block;
 }
 
-
+.promo_slide{
+    margin-left: -58%;
+}
 
 
 }
